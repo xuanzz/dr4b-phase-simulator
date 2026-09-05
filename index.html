@@ -1197,17 +1197,17 @@ html&gt;body{padding:0}&lt;/style&gt;
 
 &lt;div id=&quot;dr4b-sim&quot; style=&quot;font-family:system-ui,sans-serif;color:var(--foreground);max-width:820px;margin:auto&quot;&gt;
   &lt;style&gt;
-    #dr4b-sim .controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 12px}#dr4b-sim label{font-size:14px;font-weight:650}#dr4b-sim input{width:100%;accent-color:var(--viz-series-1)}#dr4b-sim .readout{font-variant-numeric:tabular-nums;font-weight:700}#dr4b-sim svg{width:100%;height:auto;display:block}#dr4b-sim .panelTitle{font-size:17px;font-weight:750}#dr4b-sim .label{font-size:13px}@media(max-width:520px){#dr4b-sim .controls{grid-template-columns:1fr}}
+    #dr4b-sim .controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 12px}#dr4b-sim label{font-size:14px;font-weight:650}#dr4b-sim input{width:100%;accent-color:var(--viz-series-1)}#dr4b-sim .readout{font-variant-numeric:tabular-nums;font-weight:700}#dr4b-sim svg{width:100%;height:auto;display:block}#dr4b-sim .panelTitle{font-size:17px;font-weight:750}#dr4b-sim .label{font-size:13px}#dr4b-sim .guide{margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}#dr4b-sim .guide h2{margin-bottom:8px;font-size:20px;line-height:1.3}#dr4b-sim .guide h3{margin:14px 0 4px;font-size:15px}#dr4b-sim .guide p{margin:0 0 8px;line-height:1.55}#dr4b-sim .guideGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}#dr4b-sim .guideFigure{margin:0;padding:8px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--card)}#dr4b-sim .guideFigure svg{height:auto}#dr4b-sim .guideFigure figcaption{font-size:13px;text-align:center}#dr4b-sim .guide ol{margin:6px 0 0;padding-left:1.4em}#dr4b-sim .guide li{margin:4px 0;line-height:1.5}@media(max-width:520px){#dr4b-sim .controls{grid-template-columns:1fr}#dr4b-sim .guideGrid{grid-template-columns:1fr}}
   &lt;/style&gt;
   &lt;div class=&quot;controls&quot;&gt;
-    &lt;label&gt;升降角度：&lt;span class=&quot;readout&quot; id=&quot;angleOut&quot;&gt;35°&lt;/span&gt;&lt;input id=&quot;angle&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;65&quot; value=&quot;35&quot; aria-label=&quot;Lift angle&quot;/&gt;&lt;/label&gt;
-    &lt;label&gt;两组臂相位差：&lt;span class=&quot;readout&quot; id=&quot;phaseOut&quot;&gt;18°&lt;/span&gt;&lt;input id=&quot;phase&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;35&quot; value=&quot;18&quot; aria-label=&quot;Phase mismatch&quot;/&gt;&lt;/label&gt;
+    &lt;label&gt;升降角度：&lt;span class=&quot;readout&quot; id=&quot;angleOut&quot;&gt;35°&lt;/span&gt;&lt;input id=&quot;angle&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;65&quot; value=&quot;35&quot; aria-label=&quot;升降角度&quot;/&gt;&lt;/label&gt;
+    &lt;label&gt;兩組臂相位差：&lt;span class=&quot;readout&quot; id=&quot;phaseOut&quot;&gt;18°&lt;/span&gt;&lt;input id=&quot;phase&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;35&quot; value=&quot;18&quot; aria-label=&quot;相位差&quot;/&gt;&lt;/label&gt;
   &lt;/div&gt;
-  &lt;svg viewBox=&quot;0 0 820 480&quot; role=&quot;img&quot; aria-label=&quot;Interactive comparison of a synchronized and unsynchronized double reverse four bar lift&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 820 480&quot; role=&quot;img&quot; aria-label=&quot;同步與不同步 Double reversed 4 bar 升降機構的互動比較&quot;&gt;
     &lt;text x=&quot;205&quot; y=&quot;30&quot; text-anchor=&quot;middle&quot; class=&quot;panelTitle&quot; fill=&quot;var(--foreground)&quot;&gt;同步 DR4B&lt;/text&gt;
-    &lt;text x=&quot;615&quot; y=&quot;30&quot; text-anchor=&quot;middle&quot; class=&quot;panelTitle&quot; fill=&quot;var(--foreground)&quot;&gt;唔同步 DR4B&lt;/text&gt;
-    &lt;text x=&quot;205&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; class=&quot;label&quot; fill=&quot;var(--foreground)&quot;&gt;横向分量互相抵消&lt;/text&gt;
-    &lt;text x=&quot;615&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; class=&quot;label&quot; fill=&quot;var(--foreground)&quot;&gt;相位差造成横向漂移&lt;/text&gt;
+    &lt;text x=&quot;615&quot; y=&quot;30&quot; text-anchor=&quot;middle&quot; class=&quot;panelTitle&quot; fill=&quot;var(--foreground)&quot;&gt;不同步 DR4B&lt;/text&gt;
+    &lt;text x=&quot;205&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; class=&quot;label&quot; fill=&quot;var(--foreground)&quot;&gt;橫向分量互相抵銷&lt;/text&gt;
+    &lt;text x=&quot;615&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; class=&quot;label&quot; fill=&quot;var(--foreground)&quot;&gt;相位差造成橫向漂移&lt;/text&gt;
     &lt;path d=&quot;M50 390H365M455 390H770&quot; stroke=&quot;var(--border)&quot; stroke-width=&quot;3&quot;/&gt;
     &lt;g id=&quot;sync&quot;&gt;&lt;/g&gt;&lt;g id=&quot;async&quot;&gt;&lt;/g&gt;
     &lt;text id=&quot;syncText&quot; x=&quot;205&quot; y=&quot;438&quot; text-anchor=&quot;middle&quot; class=&quot;label&quot; fill=&quot;var(--foreground)&quot;&gt;&lt;/text&gt;
@@ -1223,10 +1223,53 @@ html&gt;body{padding:0}&lt;/style&gt;
         group.append(el('path',{d:`M${cx} 80 V390`,stroke:'var(--border)','stroke-width':2,'stroke-dasharray':'6 6'}));
         const dot=el('circle',{cx:top.x,cy:top.y,r:5,fill:'var(--viz-series-4)'});group.append(dot);
         return {dx:top.x-cx,dy:baseY-top.y};}
-      function update(){const theta=+a.value,phase=+p.value;ao.textContent=theta+'°';po.textContent=phase+'°';const s=draw(root.querySelector('#sync'),205,theta,0,false),n=draw(root.querySelector('#async'),615,theta,phase,true);root.querySelector('#syncText').textContent=`横向位移：${s.dx.toFixed(1)}（零）`;root.querySelector('#asyncText').textContent=`横向位移：${n.dx.toFixed(1)} 格单位`}
+      function update(){const theta=+a.value,phase=+p.value;ao.textContent=theta+'°';po.textContent=phase+'°';const s=draw(root.querySelector('#sync'),205,theta,0,false),n=draw(root.querySelector('#async'),615,theta,phase,true);root.querySelector('#syncText').textContent=`橫向位移：${s.dx.toFixed(1)}（零）`;root.querySelector('#asyncText').textContent=`橫向位移：${n.dx.toFixed(1)} 格單位`}
       a.addEventListener('input',update);p.addEventListener('input',update);update();
     })();
   &lt;/script&gt;
+  &lt;section class=&quot;guide&quot; aria-labelledby=&quot;guideTitle&quot;&gt;
+    &lt;h2 id=&quot;guideTitle&quot;&gt;VEX DR4B 不同步：看圖調整&lt;/h2&gt;
+    &lt;p&gt;一組 VEX 動力透過齒輪鏈帶動兩組 4-bar。目標是：兩側同角、齒輪不卡、平台不偏。&lt;/p&gt;
+    &lt;div class=&quot;guideGrid&quot;&gt;
+      &lt;figure class=&quot;guideFigure&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 360 150&quot; role=&quot;img&quot; aria-label=&quot;正確對齒與齒隙過大的比較&quot;&gt;
+          &lt;g fill=&quot;none&quot; stroke=&quot;var(--primary)&quot; stroke-width=&quot;3&quot;&gt;
+            &lt;circle cx=&quot;82&quot; cy=&quot;65&quot; r=&quot;35&quot;/&gt;&lt;circle cx=&quot;138&quot; cy=&quot;65&quot; r=&quot;21&quot;/&gt;
+            &lt;path d=&quot;M117 65h6M82 30v70M47 65h70M138 44v42M117 65h42&quot;/&gt;
+          &lt;/g&gt;
+          &lt;text x=&quot;110&quot; y=&quot;125&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--foreground)&quot;&gt;正確對齒：同角&lt;/text&gt;
+          &lt;g transform=&quot;translate(180 0)&quot; fill=&quot;none&quot; stroke=&quot;var(--destructive)&quot; stroke-width=&quot;3&quot;&gt;
+            &lt;circle cx=&quot;62&quot; cy=&quot;65&quot; r=&quot;35&quot;/&gt;&lt;circle cx=&quot;145&quot; cy=&quot;65&quot; r=&quot;21&quot;/&gt;
+            &lt;path d=&quot;M27 65h70M62 30v70M124 65h42M145 44v42&quot;/&gt;
+            &lt;path d=&quot;M101 42l14 14M101 88l14-14&quot; stroke-dasharray=&quot;4 4&quot;/&gt;
+          &lt;/g&gt;
+          &lt;text x=&quot;270&quot; y=&quot;125&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--foreground)&quot;&gt;齒隙過大：換向落後&lt;/text&gt;
+        &lt;/svg&gt;
+        &lt;figcaption&gt;齒輪要完整嚙合，但不能壓得過緊。&lt;/figcaption&gt;
+      &lt;/figure&gt;
+      &lt;figure class=&quot;guideFigure&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 360 150&quot; role=&quot;img&quot; aria-label=&quot;VEX DR4B 調整流程圖&quot;&gt;
+          &lt;g fill=&quot;var(--accent)&quot; stroke=&quot;var(--primary)&quot; stroke-width=&quot;2&quot;&gt;
+            &lt;rect x=&quot;8&quot; y=&quot;52&quot; width=&quot;72&quot; height=&quot;42&quot; rx=&quot;7&quot;/&gt;&lt;rect x=&quot;98&quot; y=&quot;52&quot; width=&quot;72&quot; height=&quot;42&quot; rx=&quot;7&quot;/&gt;
+            &lt;rect x=&quot;188&quot; y=&quot;52&quot; width=&quot;72&quot; height=&quot;42&quot; rx=&quot;7&quot;/&gt;&lt;rect x=&quot;278&quot; y=&quot;52&quot; width=&quot;72&quot; height=&quot;42&quot; rx=&quot;7&quot;/&gt;
+          &lt;/g&gt;
+          &lt;g fill=&quot;var(--foreground)&quot; font-size=&quot;13&quot; text-anchor=&quot;middle&quot;&gt;
+            &lt;text x=&quot;44&quot; y=&quot;78&quot;&gt;斷電&lt;/text&gt;&lt;text x=&quot;134&quot; y=&quot;78&quot;&gt;對零位&lt;/text&gt;&lt;text x=&quot;224&quot; y=&quot;78&quot;&gt;重新對齒&lt;/text&gt;&lt;text x=&quot;314&quot; y=&quot;78&quot;&gt;低速測試&lt;/text&gt;
+          &lt;/g&gt;
+          &lt;g stroke=&quot;var(--muted-foreground)&quot; stroke-width=&quot;2&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M80 73h18l-5-5m5 5-5 5M170 73h18l-5-5m5 5-5 5M260 73h18l-5-5m5 5-5 5&quot;/&gt;&lt;/g&gt;
+        &lt;/svg&gt;
+        &lt;figcaption&gt;每次只改一項，再觀察兩側角度。&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;四步調整&lt;/h3&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;斷電：&lt;/strong&gt;卸下負載，避免用手硬扳齒輪。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;對零位：&lt;/strong&gt;兩組 4-bar 放到同一角度，輸出端高度一致。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;對齒：&lt;/strong&gt;微調輸出齒輪起始齒位，固定軸套與結構梁。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;測試：&lt;/strong&gt;低速空載往返；穩定後再逐步加載。&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;&lt;strong&gt;判斷：&lt;/strong&gt;全程固定偏差＝零位／對齒；換向才偏差＝齒隙；負載越大越偏＝支架撓曲或軸心不平行。&lt;/p&gt;
+  &lt;/section&gt;
 &lt;/div&gt;
 
 
